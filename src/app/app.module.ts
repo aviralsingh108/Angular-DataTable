@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import {MatTableModule} from '@angular/material/table';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 
@@ -24,7 +26,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatTableModule,
     MatCheckboxModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

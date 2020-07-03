@@ -1,7 +1,9 @@
 
 import {SelectionModel} from '@angular/cdk/collections';
-import {Component} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatTableDataSource} from '@angular/material/table';
+import {MatPaginator} from '@angular/material/paginator';
+
 
 export interface Nutritions {
   name: string;
@@ -44,6 +46,12 @@ export class TableComponent {
   displayedColumns: string[] = ['select', 'name', 'calories',	'fat',	'carbs',	'protein',	'sodium',	'calcium',	'iron'];
   dataSource = new MatTableDataSource<Nutritions>(ELEMENT_DATA);
   selection = new SelectionModel<Nutritions>(true, []);
+
+  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
+
+  ngOnInit() {
+    this.dataSource.paginator = this.paginator;
+  }
 
   /** Whether the number of selected elements matches the total number of rows. */
   isAllSelected() {
