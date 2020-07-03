@@ -1,0 +1,38 @@
+table{
+  width: 100%;
+}
+.header
+{
+width: 100%;
+position: fixed;
+height:60px;
+background-size: 10px;
+background-color: rgb(44, 89, 172);
+}
+.head{
+  color: white;
+  font-size: large;
+  margin-left: 14px;
+  font-stretch: wider;
+  margin-top: 20px;
+  font-weight: 400;
+
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  background-size: 10px;
+  height: 60px;
+}
+.foot
+{
+color:rgb(104, 104, 104);
+font-size: medium;
+margin-left: 12px;
+margin-top: 20px;
+font-weight: 400;
+}
